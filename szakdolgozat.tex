@@ -1,0 +1,29 @@
+\documentclass[twoside, a4paper, 12pt]{article}
+\usepackage{thesis-style}
+
+\input{tex/adatok}
+
+\title{\CIM}
+\author{\SZERZO}
+\date{\VEDESEVE}
+
+\begin{document}
+\pagestyle{empty}
+
+% belső fedőlap
+\include{tex/fedolap}
+\cleardoublepage
+
+% a belső fedőlap utáni lap a témabejelentő
+
+% tartalomjegyzék
+\tableofcontents
+\cleardoublepage
+
+\pagestyle{plain}
+\setcounter{page}{1}
+
+% tartalom
+\input{tex/tartalom}
+
+\end{document}
